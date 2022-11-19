@@ -13,8 +13,8 @@ contract FamilyTree {
         string birthPlace;
         string deathDate;
         string deathPlace;
-        uint256 fatherId;
-        uint256 motherId;
+        uint256 leftParentId;
+        uint256 rightParentId;
     }
 
     struct Tree {
@@ -57,8 +57,8 @@ contract FamilyTree {
     function addParentsToHuman(uint256 id, uint256 leftParentId, uint256 rightParentId) external {
         require(humanManagers[msg.sender] == id, "You are not the manager of this human");
         Human storage human = humans[id];
-        human.fatherId = leftParentId;
-        human.motherId = rightParentId;
+        human.leftParentId = leftParentId;
+        human.rightParentId = rightParentId;
     }
 
     function getHuman(uint256 humanId) external view returns (Human memory) {
