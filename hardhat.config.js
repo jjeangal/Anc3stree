@@ -1,7 +1,8 @@
-require("./chain/FEVM-Hardhat-Kit/tasks")
 require("dotenv").config()
 require('hardhat-deploy');
 require('hardhat-deploy-ethers');
+require("@nomicfoundation/hardhat-toolbox");
+require("./chain/FEVM-Hardhat-Kit/tasks")
 
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 /** @type import('hardhat/config').HardhatUserConfig */

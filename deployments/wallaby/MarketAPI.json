@@ -1,0 +1,764 @@
+{
+  "address": "0xC71898Ae1103F4c2f14dbfD49dBeFB2Ad599F839",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "provider_or_client",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct MarketTypes.AddBalanceParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "add_balance",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "addr",
+          "type": "string"
+        }
+      ],
+      "name": "get_balance",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "balance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "locked",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetBalanceReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealActivationParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_activation",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "int64",
+              "name": "activated",
+              "type": "int64"
+            },
+            {
+              "internalType": "int64",
+              "name": "terminated",
+              "type": "int64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealActivationReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealClientParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_client",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "client",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealClientReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealClientCollateralParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_client_collateral",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealClientCollateralReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealDataCommitmentParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_data_commitment",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint64",
+              "name": "size",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealDataCommitmentReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealLabelParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_label",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "label",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealLabelReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealProviderParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_provider",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "provider",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealProviderReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealProviderCollateralParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_provider_collateral",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealProviderCollateralReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealTermParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_term",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "int64",
+              "name": "start",
+              "type": "int64"
+            },
+            {
+              "internalType": "int64",
+              "name": "end",
+              "type": "int64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealTermReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealEpochPriceParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_total_price",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "price_per_epoch",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealEpochPriceReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint64",
+              "name": "id",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealVerifiedParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "get_deal_verified",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "verified",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct MarketTypes.GetDealVerifiedReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "raw_auth_params",
+          "type": "bytes"
+        },
+        {
+          "internalType": "address",
+          "name": "callee",
+          "type": "address"
+        }
+      ],
+      "name": "publish_storage_deals",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "provider_or_client",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenAmount",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MarketTypes.WithdrawBalanceParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "withdraw_balance",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "amount_withdrawn",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MarketTypes.WithdrawBalanceReturn",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xe7cba592333b488dc3023f37af7c34c4dc3eb10b4692ecbb391e48bc0c9d46aa",
+  "receipt": {
+    "to": null,
+    "from": "0x35620cf0C31482Bf726aF1D409eA38333E460c3a",
+    "contractAddress": "0xC71898Ae1103F4c2f14dbfD49dBeFB2Ad599F839",
+    "transactionIndex": 0,
+    "gasUsed": "71613595",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+    "blockHash": "0x2897da4cb7a5eee494f2ecc27145fef183ed70a551d6810c93abe0a7f1ae042e",
+    "transactionHash": "0xe7cba592333b488dc3023f37af7c34c4dc3eb10b4692ecbb391e48bc0c9d46aa",
+    "logs": [],
+    "blockNumber": 6695,
+    "cumulativeGasUsed": "0",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "7243697f0458b8069f5525ae1300af2f",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"provider_or_client\",\"type\":\"string\"}],\"internalType\":\"struct MarketTypes.AddBalanceParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"add_balance\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"addr\",\"type\":\"string\"}],\"name\":\"get_balance\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"locked\",\"type\":\"uint256\"}],\"internalType\":\"struct MarketTypes.GetBalanceReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealActivationParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_activation\",\"outputs\":[{\"components\":[{\"internalType\":\"int64\",\"name\":\"activated\",\"type\":\"int64\"},{\"internalType\":\"int64\",\"name\":\"terminated\",\"type\":\"int64\"}],\"internalType\":\"struct MarketTypes.GetDealActivationReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealClientParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_client\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"client\",\"type\":\"string\"}],\"internalType\":\"struct MarketTypes.GetDealClientReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealClientCollateralParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_client_collateral\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"collateral\",\"type\":\"uint256\"}],\"internalType\":\"struct MarketTypes.GetDealClientCollateralReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealDataCommitmentParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_data_commitment\",\"outputs\":[{\"components\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"internalType\":\"uint64\",\"name\":\"size\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealDataCommitmentReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealLabelParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_label\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"label\",\"type\":\"string\"}],\"internalType\":\"struct MarketTypes.GetDealLabelReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealProviderParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_provider\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"provider\",\"type\":\"string\"}],\"internalType\":\"struct MarketTypes.GetDealProviderReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealProviderCollateralParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_provider_collateral\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"collateral\",\"type\":\"uint256\"}],\"internalType\":\"struct MarketTypes.GetDealProviderCollateralReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealTermParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_term\",\"outputs\":[{\"components\":[{\"internalType\":\"int64\",\"name\":\"start\",\"type\":\"int64\"},{\"internalType\":\"int64\",\"name\":\"end\",\"type\":\"int64\"}],\"internalType\":\"struct MarketTypes.GetDealTermReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealEpochPriceParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_total_price\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"price_per_epoch\",\"type\":\"uint256\"}],\"internalType\":\"struct MarketTypes.GetDealEpochPriceReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"internalType\":\"struct MarketTypes.GetDealVerifiedParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"get_deal_verified\",\"outputs\":[{\"components\":[{\"internalType\":\"bool\",\"name\":\"verified\",\"type\":\"bool\"}],\"internalType\":\"struct MarketTypes.GetDealVerifiedReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"raw_auth_params\",\"type\":\"bytes\"},{\"internalType\":\"address\",\"name\":\"callee\",\"type\":\"address\"}],\"name\":\"publish_storage_deals\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"provider_or_client\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"tokenAmount\",\"type\":\"uint256\"}],\"internalType\":\"struct MarketTypes.WithdrawBalanceParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"withdraw_balance\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"amount_withdrawn\",\"type\":\"uint256\"}],\"internalType\":\"struct MarketTypes.WithdrawBalanceReturn\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Zondax AG\",\"details\":\"Methods prefixed with mock_ will not be available in the real library. These methods are merely used to set mock state. Note that this interface will likely break in the future as we align it\",\"kind\":\"dev\",\"methods\":{\"add_balance((string))\":{\"details\":\"Because this is a mock method, no real balance is being deducted from the caller, nor incremented in the Storage Market actor (f05).\"},\"get_balance(string)\":{\"returns\":{\"_0\":\"the escrow balance and locked amount for an address.\"}},\"get_deal_activation((uint64))\":{\"returns\":{\"_0\":\"USR_NOT_FOUND if the deal doesn't exist (yet), or EX_DEAL_EXPIRED if the deal has been removed from state.\"}},\"get_deal_client((uint64))\":{\"returns\":{\"_0\":\"the client of a deal proposal.\"}},\"get_deal_client_collateral((uint64))\":{\"returns\":{\"_0\":\"the client collateral requirement for a deal proposal.\"}},\"get_deal_data_commitment((uint64))\":{\"details\":\"set data values correctly, currently returning fixed data, feel free to adjust in your local mock.\",\"returns\":{\"_0\":\"the data commitment and size of a deal proposal.\"}},\"get_deal_label((uint64))\":{\"returns\":{\"_0\":\"the label of a deal proposal.\"}},\"get_deal_provider((uint64))\":{\"returns\":{\"_0\":\"the provider of a deal proposal.\"}},\"get_deal_provider_collateral((uint64))\":{\"returns\":{\"_0\":\"the provider collateral requirement for a deal proposal.\"}},\"get_deal_term((uint64))\":{\"returns\":{\"_0\":\"the start epoch and duration (in epochs) of a deal proposal.\"}},\"get_deal_total_price((uint64))\":{\"returns\":{\"_0\":\"the per-epoch price of a deal proposal.\"}},\"get_deal_verified((uint64))\":{\"returns\":{\"_0\":\"the verified flag for a deal proposal.\"}},\"withdraw_balance((string,uint256))\":{\"details\":\"This method should be called by an approved address, but the mock does not check that the caller is an approved party.Because this is a mock method, no real balance is deposited in the designated address, nor decremented from the Storage Market actor (f05).\"}},\"title\":\"This contract is a proxy to the singleton Storage Market actor (address: f05). Calling one of its methods will result in a cross-actor call being performed. However, in this mock library, no actual call is performed.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"add_balance((string))\":{\"notice\":\"Deposits the received value into the balance held in escrow.\"},\"get_deal_activation((uint64))\":{\"notice\":\"Fetches activation state for a deal.This will be available from when the proposal is published until an undefined period after the deal finishes (either normally or by termination).\"},\"get_deal_data_commitment((uint64))\":{\"notice\":\"This will be available after the deal is published (whether or not is is activated) and up until some undefined period after it is terminated.\"},\"get_deal_verified((uint64))\":{\"notice\":\"Note that the source of truth for verified allocations and claims is the verified registry actor.\"},\"publish_storage_deals(bytes,address)\":{\"notice\":\"Publish a new set of storage deals (not yet included in a sector).\"},\"withdraw_balance((string,uint256))\":{\"notice\":\"Attempt to withdraw the specified amount from the balance held in escrow.If less than the specified amount is available, yields the entire available balance.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol\":\"MarketAPI\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol\":{\"content\":\"// SPDX-License-Identifier: Apache-2.0\\npragma solidity >=0.4.25 <=0.8.17;\\n\\nimport \\\"./types/MarketTypes.sol\\\";\\n\\n/// @title This contract is a proxy to the singleton Storage Market actor (address: f05). Calling one of its methods will result in a cross-actor call being performed. However, in this mock library, no actual call is performed.\\n/// @author Zondax AG\\n/// @dev Methods prefixed with mock_ will not be available in the real library. These methods are merely used to set mock state. Note that this interface will likely break in the future as we align it\\n//       with that of the real library!\\ncontract MarketAPI {\\n    mapping(string => uint256) balances;\\n    mapping(uint64 => MarketTypes.MockDeal) deals;\\n\\n    constructor() {\\n        mock_generate_deals();\\n    }\\n\\n    /// @notice Deposits the received value into the balance held in escrow.\\n    /// @dev Because this is a mock method, no real balance is being deducted from the caller, nor incremented in the Storage Market actor (f05).\\n    function add_balance(\\n        MarketTypes.AddBalanceParams memory params\\n    ) public payable {\\n        balances[params.provider_or_client] += msg.value;\\n    }\\n\\n    /// @notice Attempt to withdraw the specified amount from the balance held in escrow.\\n    /// @notice If less than the specified amount is available, yields the entire available balance.\\n    /// @dev This method should be called by an approved address, but the mock does not check that the caller is an approved party.\\n    /// @dev Because this is a mock method, no real balance is deposited in the designated address, nor decremented from the Storage Market actor (f05).\\n    function withdraw_balance(\\n        MarketTypes.WithdrawBalanceParams memory params\\n    ) public returns (MarketTypes.WithdrawBalanceReturn memory) {\\n        uint256 tmp = balances[params.provider_or_client];\\n        if (balances[params.provider_or_client] >= params.tokenAmount) {\\n            balances[params.provider_or_client] -= params.tokenAmount;\\n            tmp = params.tokenAmount;\\n        } else {\\n            balances[params.provider_or_client] = 0;\\n        }\\n\\n        return MarketTypes.WithdrawBalanceReturn(tmp);\\n    }\\n\\n    /// @return the escrow balance and locked amount for an address.\\n    function get_balance(\\n        string memory addr\\n    ) public view returns (MarketTypes.GetBalanceReturn memory) {\\n        uint256 actualBalance = balances[addr];\\n\\n        return MarketTypes.GetBalanceReturn(actualBalance, 0);\\n    }\\n\\n    /// @return the data commitment and size of a deal proposal.\\n    /// @notice This will be available after the deal is published (whether or not is is activated) and up until some undefined period after it is terminated.\\n    /// @dev set data values correctly, currently returning fixed data, feel free to adjust in your local mock.\\n    function get_deal_data_commitment(\\n        MarketTypes.GetDealDataCommitmentParams memory params\\n    ) public view returns (MarketTypes.GetDealDataCommitmentReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return\\n            MarketTypes.GetDealDataCommitmentReturn(\\n                bytes(\\\"0x111111\\\"),\\n                deals[params.id].size\\n            );\\n    }\\n\\n    /// @return the client of a deal proposal.\\n    function get_deal_client(\\n        MarketTypes.GetDealClientParams memory params\\n    ) public view returns (MarketTypes.GetDealClientReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return MarketTypes.GetDealClientReturn(deals[params.id].client);\\n    }\\n\\n    /// @return the provider of a deal proposal.\\n    function get_deal_provider(\\n        MarketTypes.GetDealProviderParams memory params\\n    ) public view returns (MarketTypes.GetDealProviderReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return MarketTypes.GetDealProviderReturn(deals[params.id].provider);\\n    }\\n\\n    /// @return the label of a deal proposal.\\n    function get_deal_label(\\n        MarketTypes.GetDealLabelParams memory params\\n    ) public view returns (MarketTypes.GetDealLabelReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return MarketTypes.GetDealLabelReturn(deals[params.id].label);\\n    }\\n\\n    /// @return the start epoch and duration (in epochs) of a deal proposal.\\n    function get_deal_term(\\n        MarketTypes.GetDealTermParams memory params\\n    ) public view returns (MarketTypes.GetDealTermReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return\\n            MarketTypes.GetDealTermReturn(\\n                deals[params.id].start,\\n                deals[params.id].end\\n            );\\n    }\\n\\n    /// @return the per-epoch price of a deal proposal.\\n    function get_deal_total_price(\\n        MarketTypes.GetDealEpochPriceParams memory params\\n    ) public view returns (MarketTypes.GetDealEpochPriceReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return\\n            MarketTypes.GetDealEpochPriceReturn(\\n                deals[params.id].price_per_epoch\\n            );\\n    }\\n\\n    /// @return the client collateral requirement for a deal proposal.\\n    function get_deal_client_collateral(\\n        MarketTypes.GetDealClientCollateralParams memory params\\n    ) public view returns (MarketTypes.GetDealClientCollateralReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return\\n            MarketTypes.GetDealClientCollateralReturn(\\n                deals[params.id].client_collateral\\n            );\\n    }\\n\\n    /// @return the provider collateral requirement for a deal proposal.\\n    function get_deal_provider_collateral(\\n        MarketTypes.GetDealProviderCollateralParams memory params\\n    ) public view returns (MarketTypes.GetDealProviderCollateralReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return\\n            MarketTypes.GetDealProviderCollateralReturn(\\n                deals[params.id].provider_collateral\\n            );\\n    }\\n\\n    /// @return the verified flag for a deal proposal.\\n    /// @notice Note that the source of truth for verified allocations and claims is the verified registry actor.\\n    function get_deal_verified(\\n        MarketTypes.GetDealVerifiedParams memory params\\n    ) public view returns (MarketTypes.GetDealVerifiedReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return MarketTypes.GetDealVerifiedReturn(deals[params.id].verified);\\n    }\\n\\n    /// @notice Fetches activation state for a deal.\\n    /// @notice This will be available from when the proposal is published until an undefined period after the deal finishes (either normally or by termination).\\n    /// @return USR_NOT_FOUND if the deal doesn't exist (yet), or EX_DEAL_EXPIRED if the deal has been removed from state.\\n    function get_deal_activation(\\n        MarketTypes.GetDealActivationParams memory params\\n    ) public view returns (MarketTypes.GetDealActivationReturn memory) {\\n        require(deals[params.id].id > 0);\\n\\n        return\\n            MarketTypes.GetDealActivationReturn(\\n                deals[params.id].activated,\\n                deals[params.id].terminated\\n            );\\n    }\\n\\n    /// @notice Publish a new set of storage deals (not yet included in a sector).\\n    function publish_storage_deals(bytes memory raw_auth_params, address callee) public {\\n        // calls standard filecoin receiver on message authentication api method number\\n        (bool success, ) = callee.call(\\n            abi.encodeWithSignature(\\n                \\\"handle_filecoin_method(uint64,uint64,bytes)\\\",\\n                0,\\n                2643134072,\\n                raw_auth_params\\n            )\\n        );\\n        require(success, \\\"client contract failed to authorize deal publish\\\");\\n    }\\n\\n    /// @notice Adds mock deal data to the internal state of this mock.\\n    /// @dev Feel free to adjust the data here to make it align with deals in your network.\\n    function mock_generate_deals() internal {\\n        MarketTypes.MockDeal memory deal_67;\\n        deal_67.id = 67;\\n        deal_67\\n            .cid = \\\"baga6ea4seaqlkg6mss5qs56jqtajg5ycrhpkj2b66cgdkukf2qjmmzz6ayksuci\\\";\\n        deal_67.size = 8388608;\\n        deal_67.verified = false;\\n        deal_67.client = \\\"t01109\\\";\\n        deal_67.provider = \\\"t01113\\\";\\n        deal_67.label = \\\"mAXCg5AIg8YBXbFjtdBy1iZjpDYAwRSt0elGLF5GvTqulEii1VcM\\\";\\n        deal_67.start = 25245;\\n        deal_67.end = 545150;\\n        deal_67.price_per_epoch = 1100000000000;\\n        deal_67.provider_collateral = 0;\\n        deal_67.client_collateral = 0;\\n        deal_67.activated = 1;\\n        deal_67.terminated = 0;\\n\\n        deals[deal_67.id] = deal_67;\\n\\n        // As EVM smart contract has a limited capacity for size (24KiB), we cannot set all deals directly here.\\n        // Please, take them from docs.\\n\\n        // Add or replace more deals here.\\n    }\\n}\\n\",\"keccak256\":\"0x8da9644c0ed9a4111d6cc01a76a2599097e63b1fee62bea2bff0a38764caffb5\",\"license\":\"Apache-2.0\"},\"chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/types/MarketTypes.sol\":{\"content\":\"// SPDX-License-Identifier: Apache-2.0\\npragma solidity >=0.4.25 <=0.8.17;\\n\\n/// @title Filecoin market actor types for Solidity.\\n/// @author Zondax AG\\nlibrary MarketTypes {\\n    struct MockDeal {\\n        uint64 id;\\n        string cid;\\n        uint64 size;\\n        bool verified;\\n        string client;\\n        string provider;\\n        string label;\\n        int64 start;\\n        int64 end;\\n        uint256 price_per_epoch;\\n        uint256 provider_collateral;\\n        uint256 client_collateral;\\n        int64 activated;\\n        int64 terminated;\\n    }\\n\\n    struct AddBalanceParams {\\n        string provider_or_client;\\n    }\\n\\n    struct WithdrawBalanceParams {\\n        string provider_or_client;\\n        uint256 tokenAmount;\\n    }\\n\\n    struct WithdrawBalanceReturn {\\n        uint256 amount_withdrawn;\\n    }\\n\\n    struct GetBalanceReturn {\\n        uint256 balance;\\n        uint256 locked;\\n    }\\n\\n    struct GetDealDataCommitmentParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealDataCommitmentReturn {\\n        bytes data;\\n        uint64 size;\\n    }\\n\\n    struct GetDealClientParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealClientReturn {\\n        string client;\\n    }\\n\\n    struct GetDealProviderParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealProviderReturn {\\n        string provider;\\n    }\\n\\n    struct GetDealLabelParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealLabelReturn {\\n        string label;\\n    }\\n\\n    struct GetDealTermParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealTermReturn {\\n        int64 start;\\n        int64 end;\\n    }\\n\\n    struct GetDealEpochPriceParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealEpochPriceReturn {\\n        uint256 price_per_epoch;\\n    }\\n\\n    struct GetDealClientCollateralParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealClientCollateralReturn {\\n        uint256 collateral;\\n    }\\n\\n    struct GetDealProviderCollateralParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealProviderCollateralReturn {\\n        uint256 collateral;\\n    }\\n\\n    struct GetDealVerifiedParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealVerifiedReturn {\\n        bool verified;\\n    }\\n\\n    struct GetDealActivationParams {\\n        uint64 id;\\n    }\\n\\n    struct GetDealActivationReturn {\\n        int64 activated;\\n        int64 terminated;\\n    }\\n}\\n\",\"keccak256\":\"0x49adf6a1ec1d7a41f025b0edb0f5ab8a04f584481b6aff8be95afe48c78c6a91\",\"license\":\"Apache-2.0\"}},\"version\":1}",
+  "bytecode": "0x346200082057610240604052606060a0819052600060c081905260e0819052610100829052610120829052610140919091526101608190526101808190526101a08190526101c08190526101e08190526102008190526102205260436080526200006862000825565b60408082527f6261676136656134736561716c6b67366d737335717335366a7174616a67357960208301527f637268706b6a326236366367646b756b6632716a6d6d7a7a3661796b737563699082015260a0526280000060c052600060e052620000d162000845565b600681526574303131303960d01b602082015261010052620000f262000845565b600681526574303131313360d01b6020820152610120526200011362000825565b603481527f6d41584367354149673859425862466a7464427931695a6a70445941775253746020808301919091527f30656c474c463547765471756c4569693156634d0000000000000000000000006040808401919091526101409290925261629d610160526208517e610180526501001d1bf8006101a05260006101c08190526101e081905260016102008190526102208290526080516001600160401b039081168084529190935292902080546001600160401b031916909217825560a05180519182116200056b57600183015490600182811c9216801562000815575b60208310146200054a5781601f849311620007bd575b50602090601f831160011462000746576000926200073a575b50508160011b916000199060031b1c19161760018201555b60c05160028201805460e0516001600160481b03199091166001600160401b039384161790151560401b68ff0000000000000000161790556101005180519182116200056b57600383015490600182811c921680156200072f575b60208310146200054a5781601f849311620006d7575b50602090601f8311600114620006605760009262000654575b50508160011b916000199060031b1c19161760038201555b6101205180519091906001600160401b0381116200056b576004820154600181811c9116801562000649575b60208210146200054a57601f8111620005fd575b506020601f82116001146200058d5781929360009262000581575b50508160011b916000199060031b1c19161760048201555b610140518051906001600160401b0382116200056b576005830154600181811c9116801562000560575b60208210146200054a57601f8111620004fe575b50602090601f831160011462000482579180620004669492600a9460009262000476575b50508160011b916000199060031b1c19161760058201555b610160516006820180546101805160401b6fffffffffffffffff0000000000000000166001600160401b039093166001600160801b0319909116179190911790556101a05160078201556101c05160088201556101e051600982015561020051910180546102205160401b6fffffffffffffffff0000000000000000166001600160401b039093166001600160801b031990911617919091179055565b604051610b689081620008668239f35b015190503880620003b1565b906005840160005260206000209160005b601f1985168110620004e5575092620004669492600192600a9583601f19811610620004cb575b505050811b016005820155620003c9565b015160001960f88460031b161c19169055388080620004ba565b9192602060018192868501518155019401920162000493565b600584016000526020600020601f840160051c81016020851062000542575b601f830160051c82018110620005355750506200038d565b600081556001016200051d565b50806200051d565b634e487b7160e01b600052602260045260246000fd5b90607f169062000379565b634e487b7160e01b600052604160045260246000fd5b01519050388062000337565b60048301600052602060002090600094601f198416955b868110620005e45750836001959610620005ca575b505050811b0160048201556200034f565b015160001960f88460031b161c19169055388080620005b9565b91926020600181928685015181550194019201620005a4565b600483016000526020600020601f830160051c81016020841062000641575b601f830160051c82018110620006345750506200031c565b600081556001016200061c565b50806200061c565b90607f169062000308565b015190503880620002c4565b9250600384016000526020600020906000935b601f1984168510620006bb576001945083601f19811610620006a1575b505050811b016003820155620002dc565b015160001960f88460031b161c1916905538808062000690565b8181015183556020948501946001909301929091019062000673565b909150600384016000526020600020601f840160051c81016020851062000727575b90849392915b601f830160051c8201811062000717575050620002ab565b60008155859450600101620006ff565b5080620006f9565b91607f169162000295565b01519050388062000222565b9250600184016000526020600020906000935b601f1984168510620007a1576001945083601f1981161062000787575b505050811b0160018201556200023a565b015160001960f88460031b161c1916905538808062000776565b8181015183556020948501946001909301929091019062000759565b909150600184016000526020600020601f840160051c8101602085106200080d575b90849392915b601f830160051c82018110620007fd57505062000209565b60008155859450600101620007e5565b5080620007df565b91607f1691620001f3565b600080fd5b60405190606082016001600160401b038111838210176200056b57604052565b60408051919082016001600160401b038111838210176200056b5760405256fe60806040908082526004908136101561001757600080fd5b600091823560e01c91826313178dc1146107d6575081631a2811e714610772578163344096421461063e578163412a4b9a146105da57816355d95609146105735781635c4ddef3146104ff57816365a9b4a0146104775781638777b7c81461040c5781638b7f02fd146103a4578163991e04a4146102e75781639f4b7c7d1461026a578163ad36f184146101f5578163ebf66ef114610165575063f241560c146100c057600080fd5b34610162576020366003190112610162576100da366109a0565b9080602084516100e9816108be565b82815201526001600160401b0380835116825260016020528084832054161561015e57600a9181859285511682528383832001549451168152200154821c825191610133836108be565b60070b825260070b602082015261015c8251809260208091805160070b8452015160070b910152565bf35b5080fd5b80fd5b9050826003196020368201126101f1578235916001600160401b03918284116101ed5760209084360301126101e957519061019f826108ef565b828401359081116101e9576101c492846101bc9236920101610982565b809152610a3b565b8054913483018093116101d657505580f35b634e487b7160e01b845260119052602483fd5b8480fd5b8580fd5b8380fd5b50503461016257602036600319011261016257610211366109a0565b908060208451610220816108be565b82815201526001600160401b0380835116825260016020528084832054161561015e5760069181859285511682528383832001549451168152200154821c825191610133836108be565b82843461015e57602036600319011261015e57610286366109a0565b60608251610293816108ef565b526001600160401b03908181511684526001602052818385205416156101f1576102e3936005928492511681522001906102d78151926102d2846108ef565b610a61565b82525191829182610a22565b0390f35b5050346101625760208060031936011261015e57610304366109a0565b9180828551610312816108be565b6060815201526001600160401b0390818451168152600183528185822054161561016257906103998160028780958382519961034d8b6108be565b60088b5267307831313131313160c01b8a8c01525116815260018852200154169383519561037a876108be565b86528086019485528351968796828852519187015260608601906109fd565b925116908301520390f35b82843461015e57602036600319011261015e576103c0366109a0565b606082516103cd816108ef565b526001600160401b03908181511684526001602052818385205416156101f1576102e3936003928492511681522001906102d78151926102d2846108ef565b82843461015e57602036600319011261015e57610428366109a0565b828251610434816108ef565b526001600160401b03908181511684526001602052818385205416156101f15760209360099284925116815220015490818151610470816108ef565b5251908152f35b90503461015e57602090816003193601126104fb5780356001600160401b0381116101f1576104ad6104d1928492369101610982565b848287516104ba816108be565b8281520152818651938285809451938492016109da565b81018581520301902054918184516104e8816108be565b8481520190815283519283525190820152f35b8280fd5b82843461015e57602036600319011261015e5761051b366109a0565b828251610527816108ef565b526001600160401b03908181511684526001602052818385205416156101f1578260209460ff9360029351168152200154821c1690805191610568836108ef565b151580925251908152f35b839150346104fb5760203660031901126104fb57610590366109a0565b6060835161059d816108ef565b526001600160401b03908181511685526001602052818486205416156101e9579383916102e395511681522001906102d78151926102d2846108ef565b82843461015e57602036600319011261015e576105f6366109a0565b828251610602816108ef565b526001600160401b03908181511684526001602052818385205416156101f15760209360079284925116815220015490818151610470816108ef565b905082346104fb57806003193601126104fb578282356001600160401b03811161015e573660238201121561015e576106809036906024818701359101610946565b6024356001600160a01b03811681036104fb5782918285516106dd816106cf60208201956321a3843160e21b8752856024840152639d8b067860448401526060606484015260848301906109fd565b03601f19810183528261090a565b51925af13d1561076d573d6106f18161092b565b906106fe8451928361090a565b81528460203d92013e5b15610711578280f35b906020608492519162461bcd60e51b8352820152603060248201527f636c69656e7420636f6e7472616374206661696c656420746f20617574686f7260448201526f0d2f4ca40c8cac2d840e0eac4d8d2e6d60831b6064820152fd5b610708565b82843461015e57602036600319011261015e5761078e366109a0565b82825161079a816108ef565b526001600160401b03908181511684526001602052818385205416156101f15760209360089284925116815220015490818151610470816108ef565b8385913461015e5760031991602036840112610162578435926001600160401b03908185116104fb578590853603011261015e57610813836108be565b8386013590811161015e5761082d90863691860101610982565b82526024602083019301358352808451610846816108ef565b526108518251610a3b565b5461085c8351610a3b565b548451116108a6575061087183519251610a3b565b9081549283039283116108935750602094505551905b818151610470816108ef565b634e487b7160e01b815260118652602490fd5b93925090602094506108b89051610a3b565b55610887565b604081019081106001600160401b038211176108d957604052565b634e487b7160e01b600052604160045260246000fd5b602081019081106001600160401b038211176108d957604052565b90601f801991011681019081106001600160401b038211176108d957604052565b6001600160401b0381116108d957601f01601f191660200190565b9291926109528261092b565b91610960604051938461090a565b82948184528183011161097d578281602093846000960137010152565b600080fd5b9080601f8301121561097d5781602061099d93359101610946565b90565b602090600319011261097d57604051906001600160401b0360208301818111848210176108d95760405282600435918216820361097d5752565b60005b8381106109ed5750506000910152565b81810151838201526020016109dd565b90602091610a16815180928185528580860191016109da565b601f01601f1916010190565b604061099d9260208352519160208082015201906109fd565b6020610a549181604051938285809451938492016109da565b8101600081520301902090565b90604051906000835490600182811c90808416968715610b28575b6020948584108914610b145787988489979899529081600014610af25750600114610ab3575b505050610ab19250038361090a565b565b600090815285812095935091905b818310610ada575050610ab19350820101388080610aa2565b85548884018501529485019487945091830191610ac1565b92505050610ab194925060ff191682840152151560051b820101388080610aa2565b634e487b7160e01b85526022600452602485fd5b91607f1691610a7c56fea264697066735822122032032a2a2b1a10edd74f818a3371c13377db8a90d61ee3c04776080e8c36dcf964736f6c63430008110033",
+  "deployedBytecode": "0x60806040908082526004908136101561001757600080fd5b600091823560e01c91826313178dc1146107d6575081631a2811e714610772578163344096421461063e578163412a4b9a146105da57816355d95609146105735781635c4ddef3146104ff57816365a9b4a0146104775781638777b7c81461040c5781638b7f02fd146103a4578163991e04a4146102e75781639f4b7c7d1461026a578163ad36f184146101f5578163ebf66ef114610165575063f241560c146100c057600080fd5b34610162576020366003190112610162576100da366109a0565b9080602084516100e9816108be565b82815201526001600160401b0380835116825260016020528084832054161561015e57600a9181859285511682528383832001549451168152200154821c825191610133836108be565b60070b825260070b602082015261015c8251809260208091805160070b8452015160070b910152565bf35b5080fd5b80fd5b9050826003196020368201126101f1578235916001600160401b03918284116101ed5760209084360301126101e957519061019f826108ef565b828401359081116101e9576101c492846101bc9236920101610982565b809152610a3b565b8054913483018093116101d657505580f35b634e487b7160e01b845260119052602483fd5b8480fd5b8580fd5b8380fd5b50503461016257602036600319011261016257610211366109a0565b908060208451610220816108be565b82815201526001600160401b0380835116825260016020528084832054161561015e5760069181859285511682528383832001549451168152200154821c825191610133836108be565b82843461015e57602036600319011261015e57610286366109a0565b60608251610293816108ef565b526001600160401b03908181511684526001602052818385205416156101f1576102e3936005928492511681522001906102d78151926102d2846108ef565b610a61565b82525191829182610a22565b0390f35b5050346101625760208060031936011261015e57610304366109a0565b9180828551610312816108be565b6060815201526001600160401b0390818451168152600183528185822054161561016257906103998160028780958382519961034d8b6108be565b60088b5267307831313131313160c01b8a8c01525116815260018852200154169383519561037a876108be565b86528086019485528351968796828852519187015260608601906109fd565b925116908301520390f35b82843461015e57602036600319011261015e576103c0366109a0565b606082516103cd816108ef565b526001600160401b03908181511684526001602052818385205416156101f1576102e3936003928492511681522001906102d78151926102d2846108ef565b82843461015e57602036600319011261015e57610428366109a0565b828251610434816108ef565b526001600160401b03908181511684526001602052818385205416156101f15760209360099284925116815220015490818151610470816108ef565b5251908152f35b90503461015e57602090816003193601126104fb5780356001600160401b0381116101f1576104ad6104d1928492369101610982565b848287516104ba816108be565b8281520152818651938285809451938492016109da565b81018581520301902054918184516104e8816108be565b8481520190815283519283525190820152f35b8280fd5b82843461015e57602036600319011261015e5761051b366109a0565b828251610527816108ef565b526001600160401b03908181511684526001602052818385205416156101f1578260209460ff9360029351168152200154821c1690805191610568836108ef565b151580925251908152f35b839150346104fb5760203660031901126104fb57610590366109a0565b6060835161059d816108ef565b526001600160401b03908181511685526001602052818486205416156101e9579383916102e395511681522001906102d78151926102d2846108ef565b82843461015e57602036600319011261015e576105f6366109a0565b828251610602816108ef565b526001600160401b03908181511684526001602052818385205416156101f15760209360079284925116815220015490818151610470816108ef565b905082346104fb57806003193601126104fb578282356001600160401b03811161015e573660238201121561015e576106809036906024818701359101610946565b6024356001600160a01b03811681036104fb5782918285516106dd816106cf60208201956321a3843160e21b8752856024840152639d8b067860448401526060606484015260848301906109fd565b03601f19810183528261090a565b51925af13d1561076d573d6106f18161092b565b906106fe8451928361090a565b81528460203d92013e5b15610711578280f35b906020608492519162461bcd60e51b8352820152603060248201527f636c69656e7420636f6e7472616374206661696c656420746f20617574686f7260448201526f0d2f4ca40c8cac2d840e0eac4d8d2e6d60831b6064820152fd5b610708565b82843461015e57602036600319011261015e5761078e366109a0565b82825161079a816108ef565b526001600160401b03908181511684526001602052818385205416156101f15760209360089284925116815220015490818151610470816108ef565b8385913461015e5760031991602036840112610162578435926001600160401b03908185116104fb578590853603011261015e57610813836108be565b8386013590811161015e5761082d90863691860101610982565b82526024602083019301358352808451610846816108ef565b526108518251610a3b565b5461085c8351610a3b565b548451116108a6575061087183519251610a3b565b9081549283039283116108935750602094505551905b818151610470816108ef565b634e487b7160e01b815260118652602490fd5b93925090602094506108b89051610a3b565b55610887565b604081019081106001600160401b038211176108d957604052565b634e487b7160e01b600052604160045260246000fd5b602081019081106001600160401b038211176108d957604052565b90601f801991011681019081106001600160401b038211176108d957604052565b6001600160401b0381116108d957601f01601f191660200190565b9291926109528261092b565b91610960604051938461090a565b82948184528183011161097d578281602093846000960137010152565b600080fd5b9080601f8301121561097d5781602061099d93359101610946565b90565b602090600319011261097d57604051906001600160401b0360208301818111848210176108d95760405282600435918216820361097d5752565b60005b8381106109ed5750506000910152565b81810151838201526020016109dd565b90602091610a16815180928185528580860191016109da565b601f01601f1916010190565b604061099d9260208352519160208082015201906109fd565b6020610a549181604051938285809451938492016109da565b8101600081520301902090565b90604051906000835490600182811c90808416968715610b28575b6020948584108914610b145787988489979899529081600014610af25750600114610ab3575b505050610ab19250038361090a565b565b600090815285812095935091905b818310610ada575050610ab19350820101388080610aa2565b85548884018501529485019487945091830191610ac1565b92505050610ab194925060ff191682840152151560051b820101388080610aa2565b634e487b7160e01b85526022600452602485fd5b91607f1691610a7c56fea264697066735822122032032a2a2b1a10edd74f818a3371c13377db8a90d61ee3c04776080e8c36dcf964736f6c63430008110033",
+  "devdoc": {
+    "author": "Zondax AG",
+    "details": "Methods prefixed with mock_ will not be available in the real library. These methods are merely used to set mock state. Note that this interface will likely break in the future as we align it",
+    "kind": "dev",
+    "methods": {
+      "add_balance((string))": {
+        "details": "Because this is a mock method, no real balance is being deducted from the caller, nor incremented in the Storage Market actor (f05)."
+      },
+      "get_balance(string)": {
+        "returns": {
+          "_0": "the escrow balance and locked amount for an address."
+        }
+      },
+      "get_deal_activation((uint64))": {
+        "returns": {
+          "_0": "USR_NOT_FOUND if the deal doesn't exist (yet), or EX_DEAL_EXPIRED if the deal has been removed from state."
+        }
+      },
+      "get_deal_client((uint64))": {
+        "returns": {
+          "_0": "the client of a deal proposal."
+        }
+      },
+      "get_deal_client_collateral((uint64))": {
+        "returns": {
+          "_0": "the client collateral requirement for a deal proposal."
+        }
+      },
+      "get_deal_data_commitment((uint64))": {
+        "details": "set data values correctly, currently returning fixed data, feel free to adjust in your local mock.",
+        "returns": {
+          "_0": "the data commitment and size of a deal proposal."
+        }
+      },
+      "get_deal_label((uint64))": {
+        "returns": {
+          "_0": "the label of a deal proposal."
+        }
+      },
+      "get_deal_provider((uint64))": {
+        "returns": {
+          "_0": "the provider of a deal proposal."
+        }
+      },
+      "get_deal_provider_collateral((uint64))": {
+        "returns": {
+          "_0": "the provider collateral requirement for a deal proposal."
+        }
+      },
+      "get_deal_term((uint64))": {
+        "returns": {
+          "_0": "the start epoch and duration (in epochs) of a deal proposal."
+        }
+      },
+      "get_deal_total_price((uint64))": {
+        "returns": {
+          "_0": "the per-epoch price of a deal proposal."
+        }
+      },
+      "get_deal_verified((uint64))": {
+        "returns": {
+          "_0": "the verified flag for a deal proposal."
+        }
+      },
+      "withdraw_balance((string,uint256))": {
+        "details": "This method should be called by an approved address, but the mock does not check that the caller is an approved party.Because this is a mock method, no real balance is deposited in the designated address, nor decremented from the Storage Market actor (f05)."
+      }
+    },
+    "title": "This contract is a proxy to the singleton Storage Market actor (address: f05). Calling one of its methods will result in a cross-actor call being performed. However, in this mock library, no actual call is performed.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "add_balance((string))": {
+        "notice": "Deposits the received value into the balance held in escrow."
+      },
+      "get_deal_activation((uint64))": {
+        "notice": "Fetches activation state for a deal.This will be available from when the proposal is published until an undefined period after the deal finishes (either normally or by termination)."
+      },
+      "get_deal_data_commitment((uint64))": {
+        "notice": "This will be available after the deal is published (whether or not is is activated) and up until some undefined period after it is terminated."
+      },
+      "get_deal_verified((uint64))": {
+        "notice": "Note that the source of truth for verified allocations and claims is the verified registry actor."
+      },
+      "publish_storage_deals(bytes,address)": {
+        "notice": "Publish a new set of storage deals (not yet included in a sector)."
+      },
+      "withdraw_balance((string,uint256))": {
+        "notice": "Attempt to withdraw the specified amount from the balance held in escrow.If less than the specified amount is available, yields the entire available balance."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 267,
+        "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+        "label": "balances",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_string_memory_ptr,t_uint256)"
+      },
+      {
+        "astId": 272,
+        "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+        "label": "deals",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_uint64,t_struct(MockDeal)1474_storage)"
+      }
+    ],
+    "types": {
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_int64": {
+        "encoding": "inplace",
+        "label": "int64",
+        "numberOfBytes": "8"
+      },
+      "t_mapping(t_string_memory_ptr,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_string_memory_ptr",
+        "label": "mapping(string => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_mapping(t_uint64,t_struct(MockDeal)1474_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint64",
+        "label": "mapping(uint64 => struct MarketTypes.MockDeal)",
+        "numberOfBytes": "32",
+        "value": "t_struct(MockDeal)1474_storage"
+      },
+      "t_string_memory_ptr": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(MockDeal)1474_storage": {
+        "encoding": "inplace",
+        "label": "struct MarketTypes.MockDeal",
+        "members": [
+          {
+            "astId": 1447,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint64"
+          },
+          {
+            "astId": 1449,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "cid",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1451,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "size",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint64"
+          },
+          {
+            "astId": 1453,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "verified",
+            "offset": 8,
+            "slot": "2",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1455,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "client",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1457,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "provider",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1459,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "label",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1461,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "start",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_int64"
+          },
+          {
+            "astId": 1463,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "end",
+            "offset": 8,
+            "slot": "6",
+            "type": "t_int64"
+          },
+          {
+            "astId": 1465,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "price_per_epoch",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 1467,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "provider_collateral",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 1469,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "client_collateral",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 1471,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "activated",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_int64"
+          },
+          {
+            "astId": 1473,
+            "contract": "chain/FEVM-Hardhat-Kit/contracts/filecoinMockAPIs/MarketAPI.sol:MarketAPI",
+            "label": "terminated",
+            "offset": 8,
+            "slot": "10",
+            "type": "t_int64"
+          }
+        ],
+        "numberOfBytes": "352"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint64": {
+        "encoding": "inplace",
+        "label": "uint64",
+        "numberOfBytes": "8"
+      }
+    }
+  }
+}

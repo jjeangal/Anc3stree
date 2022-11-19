@@ -1,16 +1,11 @@
 const util = require("util");
 const request = util.promisify(require("request"));
 
-task("send-coin", "Sends SimpleCoin")
-.addParam("contractaddress", "The SimpleCoin address")
-.addParam("amount", "The amount to send")
-.addParam("toaccount", "The account to send to")
+task("create-human", "Creates a Human")
+.addParam("contract", "The FamilyTree address")
 .setAction(async (taskArgs) => {
-    const contractAddr = taskArgs.contractaddress
-    const amount = taskArgs.amount
-    const toAccount = taskArgs.toaccount
-    const networkId = network.name
-    const SimpleCoin = await ethers.getContractFactory("SimpleCoin")
+    const contractAddr = taskArgs.contract
+    const FamilyTree = await ethers.getContractFactory("FamilyTree")
     //Get signer information
     const accounts = await ethers.getSigners()
     const signer = accounts[0]
@@ -35,14 +30,12 @@ task("send-coin", "Sends SimpleCoin")
         return JSON.parse(res.body).result;
       }
 
-    const simpleCoinContract = new ethers.Contract(contractAddr, SimpleCoin.interface, signer)
-    console.log("Sending:", amount, "SimpleCoin to", toAccount)
-    await simpleCoinContract.sendCoin(toAccount, amount, {
+    const treeContract = new ethers.Contract(contractAddr, FamilyTree.interface, signer)
+    let result = await treeContract.createHuman("Jean Gal", "4/20/69", "Moon", "N/A", "N/A", 0, 0, {
         gasLimit: 1000000000,
         maxPriorityFeePerGas: priorityFee
     })
-    let result = BigInt(await simpleCoinContract.getBalance(toAccount)).toString()
-    console.log("Total SimpleCoin at:", toAccount, "is", result)
+    console.log("Created a Human", result)
 })
 
 module.exports = {}
