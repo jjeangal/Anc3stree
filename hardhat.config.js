@@ -1,4 +1,7 @@
+require("./chain/FEVM-Hardhat-Kit/tasks")
 require("dotenv").config()
+require('hardhat-deploy');
+require('hardhat-deploy-ethers');
 
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 /** @type import('hardhat/config').HardhatUserConfig */
