@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import DisconnectMenu from "./DisconnectMenu";
 import SelectWalletModal from "./WalletModal";
 
-import { 
+import {
     Flex,
     Spacer,
     HStack,
@@ -21,7 +21,7 @@ const siteTitle="Anc3stree";
 export default function Header() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
-    const { 
+    const {
         account,
         activate,
         deactivate,
@@ -47,14 +47,11 @@ export default function Header() {
         </HStack>
         <Spacer/>
         <HStack spacing='100px'>
-            <NavLink to='/tree'>
-                <Text fontSize="xl">Family Tree</Text>
-            </NavLink>
             {!active ? (
-                        <Button 
-                            onClick={onOpen} 
+                        <Button
+                            onClick={onOpen}
                             borderWidth={3}
-                            h={'60px'} 
+                            h={'60px'}
                             w={'170px'}
                             variant={'outline'}
                             >Connect Wallet</Button>

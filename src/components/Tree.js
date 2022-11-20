@@ -1,14 +1,46 @@
 import FamilyTree from '../familytree';
 import { useEffect, useState } from 'react';
 import { Button } from '@chakra-ui/react'
+import { Buffer } from 'buffer';
+
+
+
+import { Web3Storage } from 'web3.storage'
+
+function getAccessToken () {
+  return 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEJhZERjQWMwOEYwMzM4MWRkM2M3MGJjMENkMWI3N0RmYUI4MDBDRkIiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2Njg5NTgxODQxNTMsIm5hbWUiOiJ0ZXN0VG9rZW4ifQ.zAST9Br9coLcEODeM0AM4pFh6IZqZF704_xe882Ccco'
+}
+
+function makeStorageClient () {
+  return new Web3Storage({ token: getAccessToken() })
+}
+
+function makeFileObjects (jsonTree) {
+  const buffer = Buffer.from(jsonTree)
+
+  const files = [
+    new File(['contents-of-file-1'], 'plain-utf8.txt'),
+    new File([buffer], 'jsonTree.json')
+  ]
+  return files
+}
+
+async function storeFiles (jsonTree) {
+  const client = makeStorageClient()
+  const files = makeFileObjects(jsonTree)
+  const cid = await client.put(files)
+  console.log('stored files with cid:', cid)
+  return cid
+}
+
 
 
 export default function Tree() {
   const [tree, setTree] = useState();
 
-  const onConfirm = () => {
+  const onConfirm = async () => {
     var seen = [];
-    let jsonTree = JSON.stringify(ayo, function(key, val) {
+    let jsonTree = JSON.stringify(tree, function(key, val) {
        if (val != null && typeof val == "object") {
             if (seen.indexOf(val) >= 0) {
                 return;
@@ -17,6 +49,8 @@ export default function Tree() {
         }
         return val;
     });
+    let cid = await storeFiles(jsonTree)
+    console.log(cid)
   }
 
   const createTree = () => {
