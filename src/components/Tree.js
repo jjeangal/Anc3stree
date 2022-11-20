@@ -1,4 +1,4 @@
-import FamilyTree from '../familytree';
+import FamilyTree from '@balkangraph/familytree.js';
 import { useEffect, useState } from 'react';
 import { Button } from '@chakra-ui/react'
 import { Buffer } from 'buffer';
@@ -31,6 +31,19 @@ async function storeFiles (jsonTree) {
   const cid = await client.put(files)
   console.log('stored files with cid:', cid)
   return cid
+}
+
+async function retrieveFiles (cid) {
+  const client = makeStorageClient()
+  const res = await client.get(cid)
+  console.log(`Got a response! [${res.status}] ${res.statusText}`)
+  if (!res.ok) {
+    throw new Error(`failed to get ${cid} - [${res.status}] ${res.statusText}`)
+  }
+
+  // unpack File objects from the response
+  const files = await res.files()
+  console.log(files)
 }
 
 
