@@ -1,5 +1,5 @@
 
-import { Link, BrowserRouter } from "react-router-dom";
+import { NavLink, BrowserRouter } from "react-router-dom";
 import { useEffect } from "react";
 import DisconnectMenu from "./DisconnectMenu";
 import SelectWalletModal from "./WalletModal";
@@ -37,27 +37,34 @@ export default function Header() {
   return (
     <Flex backgroundColor='#DCD7C9' h={120} p={9}>
         <HStack spacing='100px'>
-            <BrowserRouter>
-                <Link to='/'>
-                    <Text fontSize="2xl" fontWeight="bold">{siteTitle}</Text>
-                </Link>
-            </BrowserRouter>
+            <NavLink to='/'>
+                <Text fontSize="2xl" fontWeight="bold">{siteTitle}</Text>
+            </NavLink>
+            <NavLink to='/about'>
+                <Text fontSize="xl">About the community</Text>
+            </NavLink>
+
         </HStack>
         <Spacer/>
-        {!active ? (
-                    <Button 
-                        onClick={onOpen} 
-                        borderWidth={3}
-                        h={'60px'} 
-                        w={'170px'}
-                        variant={'outline'}
-                        >Connect Wallet</Button>
-                ) : (
-                    <div>
-                        <DisconnectMenu deactivate={deactivate} account={account}/>
-                    </div>
-                )
-            }
+        <HStack spacing='100px'>
+            <NavLink to='/tree'>
+                <Text fontSize="xl">Family Tree</Text>
+            </NavLink>
+            {!active ? (
+                        <Button 
+                            onClick={onOpen} 
+                            borderWidth={3}
+                            h={'60px'} 
+                            w={'170px'}
+                            variant={'outline'}
+                            >Connect Wallet</Button>
+                    ) : (
+                        <div>
+                            <DisconnectMenu deactivate={deactivate} account={account}/>
+                        </div>
+                    )
+                }
+        </HStack>
         <SelectWalletModal isOpen={isOpen} closeModal={onClose} />
     </Flex>
   );
