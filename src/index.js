@@ -1,14 +1,25 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Web3ReactProvider } from '@web3-react/core';
+import { Web3Provider } from "@ethersproject/providers";
+
+function getLibrary(provider) {
+  return new Web3Provider(provider);
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ChakraProvider>
+    <Web3ReactProvider getLibrary={getLibrary}>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Web3ReactProvider>
+  </ChakraProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -58,6 +58,22 @@ module.exports = async ({ deployments }) => {
     log: true,
   });
 
+  /*
+  await deploy("Anc3streeToken", {
+    from: deployer.address,
+    args: ["Name", "Symbol", "uri", 5],
+    maxPriorityFeePerGas: priorityFee,
+    log: true,
+  })
+  */
+
+  await deploy("NFTFactory", {
+    from: deployer.address,
+    args: [],
+    maxPriorityFeePerGas: priorityFee,
+    log: true,
+  })
+/**
   await deploy("MinerAPI", {
     from: deployer.address,
     args: [0x0000001],
@@ -79,7 +95,8 @@ module.exports = async ({ deployments }) => {
     maxPriorityFeePerGas: priorityFee,
     log: true,
   });
+  */
 };
 
 
-module.exports.tags = ["SimpleCoin", "MinerAPI", "MarketAPI"];
+module.exports.tags = ["SimpleCoin", "CustomNft", "NFTFactory"];
